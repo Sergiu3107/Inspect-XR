@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Plugins/UI%20Toolkit/UIStyle.uss?fileID=7433441132597879392&amp;guid=f223cedaceace8542a2701e1d21b4c23&amp;type=3#UIStyle" />
+    <ui:VisualElement style="flex-direction: row; color: rgb(255, 255, 255);">
+        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="session-id-label" class="session-ve-margin-right" style="-unity-text-align: middle-left; font-size: 15px; -unity-font-style: bold; margin-top: 0; margin-right: 10px; margin-bottom: 0; margin-left: 0; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" />
+        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="session-created-at-label" class="session-ve-margin-right" style="-unity-font-style: bold; font-size: 15px; -unity-text-align: middle-left; margin-top: 0; margin-right: 10px; margin-bottom: 0; margin-left: 0; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" />
+        <ui:RadioButton label="Radio Button" name="session-radio-button" class="session-ve-margin-right" style="color: rgb(255, 255, 255); font-size: 15px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; -unity-text-align: middle-left; -unity-font-style: bold;" />
+    </ui:VisualElement>
+</ui:UXML>

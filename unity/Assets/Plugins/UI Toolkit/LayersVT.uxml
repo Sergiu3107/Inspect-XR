@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Plugins/UI%20Toolkit/UIStyle.uss?fileID=7433441132597879392&amp;guid=f223cedaceace8542a2701e1d21b4c23&amp;type=3#UIStyle" />
+    <ui:Button text="Hide Layers" name="show-layers-button" class="button" style="margin-top: 10px; margin-right: 10px; margin-bottom: 0; margin-left: 10px;" />
+    <ui:VisualElement name="container">
+        <ui:VisualElement name="container-info" style="width: 350px; height: 300px; position: absolute; right: 0; background-color: rgb(62, 62, 62); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+            <ui:TextField picking-mode="Ignore" label="Annotation" name="layer-info-text-field" style="flex-direction: column; flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+            <ui:VisualElement style="flex-direction: row; align-self: center; align-items: center; margin-top: 6px;">
+                <ui:Button text="Save" parse-escape-sequences="true" display-tooltip-when-elided="true" name="layer-save-button" class="button" style="align-self: center; margin-top: 0; margin-right: 2px; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                <ui:Button text="Delete" parse-escape-sequences="true" display-tooltip-when-elided="true" name="layer-delete-button" class="button" style="align-self: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 2px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="container-list" style="height: 400px; background-color: rgb(62, 62, 62); position: absolute; background-image: none; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; justify-content: space-between; align-items: center; flex-grow: 1;">
+            <ui:ListView horizontal-scrolling="true" name="annotation-list" virtualization-method="DynamicHeight" style="background-color: rgb(62, 62, 62); -unity-background-image-tint-color: rgb(255, 255, 255); flex-grow: 1;" />
+            <ui:Button text="Apply" parse-escape-sequences="true" display-tooltip-when-elided="true" name="update-layers" class="button" style="flex-direction: column; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button text="Clear" parse-escape-sequences="true" display-tooltip-when-elided="true" name="layer-clear-button" class="button" style="margin-right: 10px; margin-top: 10px; margin-bottom: 10px; margin-left: 10px; flex-grow: 0; position: absolute; bottom: 0;" />
+</ui:UXML>

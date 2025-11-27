@@ -1,0 +1,374 @@
+{
+    "sceneObjects": [
+        {
+            "name": "NetworkManager",
+            "path": "",
+            "components": [
+                "UnityEngine.Transform",
+                "Unity.Netcode.NetworkManager",
+                "Unity.Netcode.Transports.UTP.UnityTransport"
+            ],
+            "children": []
+        },
+        {
+            "name": "Directional Light",
+            "path": "",
+            "components": [
+                "UnityEngine.Transform",
+                "UnityEngine.Light",
+                "UnityEngine.Rendering.Universal.UniversalAdditionalLightData"
+            ],
+            "children": []
+        },
+        {
+            "name": "UIManagerMain",
+            "path": "",
+            "components": [
+                "UnityEngine.Transform",
+                "Unity.Netcode.NetworkObject",
+                "UIManagerEx",
+                "UIManager"
+            ],
+            "children": [
+                {
+                    "name": "LoginUIManager",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "LoginUIManager"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "UserMenuUIManager",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "UserMenuUIManager"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "PointUIManager",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "PointUIManager"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "LayersUIManager",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "LayersUIManager"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "ZoomUIManager",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "ZoomUIManager"
+                    ],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "UploadService",
+            "path": "",
+            "components": [
+                "UnityEngine.Transform",
+                "UploadService"
+            ],
+            "children": []
+        },
+        {
+            "name": "Main Camera",
+            "path": "",
+            "components": [
+                "UnityEngine.Transform",
+                "UnityEngine.Camera",
+                "UnityEngine.AudioListener",
+                "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData"
+            ],
+            "children": []
+        },
+        {
+            "name": "Logger",
+            "path": "",
+            "components": [
+                "UnityEngine.Transform",
+                "ComponentsLogger"
+            ],
+            "children": []
+        },
+        {
+            "name": "UIs",
+            "path": "",
+            "components": [
+                "UnityEngine.Transform"
+            ],
+            "children": [
+                {
+                    "name": "UserMenuUI",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "UnityEngine.UIElements.UIDocument"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "LoginUI",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "UnityEngine.UIElements.UIDocument"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "LayersUI",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "UnityEngine.UIElements.UIDocument"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "PointUI",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "UnityEngine.UIElements.UIDocument"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "Crosshair",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.RectTransform",
+                        "UnityEngine.Canvas",
+                        "UnityEngine.UI.CanvasScaler",
+                        "UnityEngine.UI.GraphicRaycaster"
+                    ],
+                    "children": [
+                        {
+                            "name": "Image",
+                            "path": "",
+                            "components": [
+                                "UnityEngine.RectTransform",
+                                "UnityEngine.CanvasRenderer",
+                                "UnityEngine.UI.Image"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "TexturesCanvas",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.RectTransform",
+                        "UnityEngine.Canvas",
+                        "UnityEngine.UI.CanvasScaler",
+                        "UnityEngine.UI.GraphicRaycaster"
+                    ],
+                    "children": [
+                        {
+                            "name": "Base",
+                            "path": "",
+                            "components": [
+                                "UnityEngine.RectTransform",
+                                "UnityEngine.CanvasRenderer",
+                                "UnityEngine.UI.RawImage"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "name": "Normal",
+                            "path": "",
+                            "components": [
+                                "UnityEngine.RectTransform",
+                                "UnityEngine.CanvasRenderer",
+                                "UnityEngine.UI.RawImage"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "name": "Occlusion",
+                            "path": "",
+                            "components": [
+                                "UnityEngine.RectTransform",
+                                "UnityEngine.CanvasRenderer",
+                                "UnityEngine.UI.RawImage"
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "EventSystem",
+            "path": "",
+            "components": [
+                "UnityEngine.Transform",
+                "UnityEngine.EventSystems.EventSystem",
+                "UnityEngine.EventSystems.StandaloneInputModule"
+            ],
+            "children": []
+        }
+    ],
+    "prefabObjects": [
+        {
+            "name": "AnnotationSphere",
+            "path": "Assets/Prefabs/AnnotationSphere.prefab",
+            "components": [
+                "UnityEngine.Transform",
+                "UnityEngine.SphereCollider",
+                "UnityEngine.MeshRenderer",
+                "UnityEngine.MeshFilter",
+                "Unity.Netcode.NetworkObject",
+                "AnnotationComponent",
+                "ClientNetworkTransform"
+            ],
+            "children": []
+        },
+        {
+            "name": "Player",
+            "path": "Assets/Prefabs/Player.prefab",
+            "components": [
+                "UnityEngine.Transform",
+                "Unity.Netcode.NetworkObject",
+                "Movement",
+                "Looking",
+                "ClientNetworkTransform",
+                "PlayerInfo",
+                "FocusOver"
+            ],
+            "children": [
+                {
+                    "name": "Graphics",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "UnityEngine.MeshFilter",
+                        "UnityEngine.MeshRenderer",
+                        "UnityEngine.BoxCollider"
+                    ],
+                    "children": [
+                        {
+                            "name": "Canvas",
+                            "path": "",
+                            "components": [
+                                "UnityEngine.RectTransform",
+                                "UnityEngine.Canvas",
+                                "UnityEngine.UI.CanvasScaler",
+                                "UnityEngine.UI.GraphicRaycaster"
+                            ],
+                            "children": [
+                                {
+                                    "name": "Username",
+                                    "path": "",
+                                    "components": [
+                                        "UnityEngine.RectTransform",
+                                        "UnityEngine.CanvasRenderer",
+                                        "TMPro.TextMeshProUGUI"
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Cube",
+                            "path": "",
+                            "components": [
+                                "UnityEngine.Transform",
+                                "UnityEngine.MeshFilter",
+                                "UnityEngine.MeshRenderer",
+                                "UnityEngine.BoxCollider"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Camera",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "UnityEngine.Camera",
+                        "UnityEngine.AudioListener",
+                        "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "PointAnnotation",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "PointAnnotation"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "PaintAnnotation",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "Paint.PaintAnnotation"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "_AnnotationService",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "AnnotationService"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "_TextureHandler",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.Transform",
+                        "Paint.TextureHandler"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "ColorPicker",
+                    "path": "",
+                    "components": [
+                        "UnityEngine.RectTransform",
+                        "UnityEngine.Canvas",
+                        "UnityEngine.UI.CanvasScaler",
+                        "UnityEngine.UI.GraphicRaycaster"
+                    ],
+                    "children": [
+                        {
+                            "name": "FlexibleColorPicker",
+                            "path": "",
+                            "components": [
+                                "UnityEngine.RectTransform",
+                                "UnityEngine.CanvasRenderer",
+                                "UnityEngine.UI.Image",
+                                "FlexibleColorPicker"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

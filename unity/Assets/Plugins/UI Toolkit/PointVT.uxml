@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Plugins/UI%20Toolkit/UIStyle.uss?fileID=7433441132597879392&amp;guid=f223cedaceace8542a2701e1d21b4c23&amp;type=3#UIStyle" />
+    <ui:VisualElement style="width: 350px; height: 300px; position: absolute; right: 0; background-color: rgb(62, 62, 62); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+        <ui:TextField picking-mode="Ignore" label="Annotation" name="point-info-text-field" style="flex-direction: column; flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+        <ui:VisualElement style="flex-direction: row; align-self: center; align-items: center; margin-top: 6px;">
+            <ui:Button text="Save" parse-escape-sequences="true" display-tooltip-when-elided="true" name="point-save-button" class="button" style="align-self: center; margin-top: 0; margin-right: 2px; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+            <ui:Button text="Delete" parse-escape-sequences="true" display-tooltip-when-elided="true" name="point-delete-button" class="button" style="align-self: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 2px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

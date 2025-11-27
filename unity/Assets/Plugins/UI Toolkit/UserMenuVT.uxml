@@ -1,0 +1,42 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Plugins/UI%20Toolkit/UIStyle.uss?fileID=7433441132597879392&amp;guid=f223cedaceace8542a2701e1d21b4c23&amp;type=3#UIStyle" />
+    <ui:VisualElement style="background-color: rgb(56, 56, 56); flex-grow: 1; justify-content: space-between;">
+        <ui:VisualElement style="flex-direction: row-reverse; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; align-items: center;">
+            <ui:Button text="Disconnect" parse-escape-sequences="true" display-tooltip-when-elided="true" name="disconnect-button" class="button" />
+            <ui:Label tabindex="-1" text="Hello" parse-escape-sequences="true" display-tooltip-when-elided="true" name="username-label" style="color: rgb(255, 255, 255); font-size: 20px; -unity-font-style: bold; -unity-text-align: middle-left; margin-right: 20px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+            <ui:Button text="Delete Model" parse-escape-sequences="true" display-tooltip-when-elided="true" name="delete-button" class="button" />
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Button text="Add Model" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-button" class="button" />
+                <ui:TextField picking-mode="Ignore" label="Choose a display name" name="display-name-text-field" style="-unity-text-align: middle-left; width: 312px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement style="flex-grow: 1; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">
+                <ui:VisualElement style="flex-direction: row; border-bottom-width: 5px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);">
+                    <ui:Label tabindex="-1" text="Model" parse-escape-sequences="true" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+                <ui:ListView name="models-list-view" style="margin-top: 10px; margin-bottom: 10px; margin-right: 10px; margin-left: 10px; flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">
+                <ui:VisualElement style="flex-direction: row; border-bottom-width: 5px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);">
+                    <ui:Label tabindex="-1" text="ID" parse-escape-sequences="true" display-tooltip-when-elided="true" class="label" />
+                    <ui:Label tabindex="-1" text="Created at" parse-escape-sequences="true" display-tooltip-when-elided="true" class="label" style="width: 160px;" />
+                    <ui:Label tabindex="-1" text="Model" parse-escape-sequences="true" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+                <ui:ListView name="sessions-list-view" style="margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; align-self: flex-end;">
+            <ui:VisualElement style="flex-direction: row; align-items: center;">
+                <ui:TextField picking-mode="Ignore" label="Session Code" name="session-code-text-field" style="width: 305px; -unity-text-align: middle-left;" />
+                <ui:Button text="Join Session" parse-escape-sequences="true" display-tooltip-when-elided="true" name="join-session-button" class="button" style="width: 159px;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row-reverse; align-items: center;">
+                <ui:Button text="Create Session" parse-escape-sequences="true" display-tooltip-when-elided="true" name="create-session-button" class="button" style="width: 160px; align-self: flex-end;" />
+                <ui:Label tabindex="-1" text="*must select a model for starting a session*" parse-escape-sequences="true" display-tooltip-when-elided="true" class="white-label" style="color: rgb(168, 168, 168); -unity-text-align: middle-left;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

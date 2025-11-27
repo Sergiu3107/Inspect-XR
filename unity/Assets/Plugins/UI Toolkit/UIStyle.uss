@@ -1,0 +1,47 @@
+.button {
+    width: 140px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    font-size: 16px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-image: none;
+    background-color: rgb(255, 255, 255);
+    -unity-font: initial;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    height: 30px;
+}
+
+.slider {
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.entry {
+    box-sizing: border-box;
+}
+
+.text-field {
+    white-space: normal;
+}
+
+TextField > Label {
+    color: white;
+}
+
+TextField > #unity-text-input {
+    margin: 0;
+    padding: 5px;
+    -unity-text-align: upper-left;
+}
+
+.label {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
